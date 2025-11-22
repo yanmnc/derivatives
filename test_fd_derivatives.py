@@ -32,8 +32,10 @@ if __name__ == "__main__":
         test_func = np.cos(2*np.pi*meshdir2)*np.sin(2*np.pi*meshdir1)
 
         # predictions of derivatives
-        first_derivative_dir2pred = -2*np.pi * np.sin(2*np.pi*meshdir2)*np.sin(2*np.pi*meshdir1)
-        first_derivative_dir1pred = 2*np.pi * np.cos(2*np.pi*meshdir2)*np.cos(2*np.pi*meshdir1)
+        first_derivative_dir2pred = -2*np.pi * \
+            np.sin(2*np.pi*meshdir2)*np.sin(2*np.pi*meshdir1)
+        first_derivative_dir1pred = 2*np.pi * \
+            np.cos(2*np.pi*meshdir2)*np.cos(2*np.pi*meshdir1)
 
         second_derivative_dir2pred = -4*np.pi**2 * test_func
         second_derivative_dir1pred = -4*np.pi**2 * test_func

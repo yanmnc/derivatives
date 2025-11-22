@@ -37,7 +37,7 @@ def periodic_centered_derivative_dir2(quantity, grid_step):
     '''
     return np.transpose(
         periodic_centered_derivative_dir1(np.transpose(quantity),
-                                             grid_step))
+                                          grid_step))
 
 
 def periodic_centered_second_derivative_dir1(quantity, grid_step):
@@ -84,4 +84,4 @@ def periodic_centered_second_derivative_dir2(quantity, grid_step):
     '''
     return np.transpose(
         periodic_centered_second_derivative_dir1(np.transpose(quantity),
-                                                    grid_step))
+                                                 grid_step))
